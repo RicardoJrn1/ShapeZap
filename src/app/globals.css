@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  /* Cores principais */
+  --background: #ffffff;       /* Branco */
+  --foreground: #0f0f0f;          /* Preto suave */
+
+  --primary: #75c097;          /* Verde #75c097 */
+  --primary-foreground: #ffffff;
+  /* Suporte ao efeito vidro */
+  --glass-bg: 255 255 255 / 0.10;       /* Fundo translúcido */
+  --glass-border: 255 255 255 / 0.25;   /* Borda suave */
+}
+
+/* ================================
+   BASE DO BODY
+   ================================ */
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================================
+   MAPEAMENTO PARA O TAILWIND THEME
+   ================================ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
